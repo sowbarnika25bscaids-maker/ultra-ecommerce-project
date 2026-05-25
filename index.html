@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium E-Commerce</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav>
+    <h1>🛒 Ultra Shop</h1>
+
+    <div class="nav-right">
+        <input type="text" id="searchInput" placeholder="Search products">
+
+        <button id="themeBtn">🌙</button>
+
+        <div class="cart-count">
+            🛍 <span id="cartCount">0</span>
+        </div>
+    </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero">
+    <h2>Premium Shopping Experience</h2>
+    <p>Discover modern gadgets & accessories</p>
+</header>
+
+<!-- CATEGORIES -->
+<div class="categories">
+    <button onclick="filterCategory('All')">All</button>
+    <button onclick="filterCategory('Audio')">Audio</button>
+    <button onclick="filterCategory('Gaming')">Gaming</button>
+    <button onclick="filterCategory('Accessories')">Accessories</button>
+</div>
+
+<!-- PRODUCTS -->
+<div class="products" id="productContainer"></div>
+
+<!-- CART -->
+<div class="cart">
+    <h2>🛍 Shopping Cart</h2>
+
+    <ul id="cartItems"></ul>
+
+    <h3>Total: ₹<span id="total">0</span></h3>
+
+    <button class="checkout-btn">Proceed to Checkout</button>
+</div>
+
+<!-- TOAST -->
+<div id="toast">Added to cart ✅</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
